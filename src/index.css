@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand accent: safety orange (replaces blue everywhere) */
+  --color-blue-50: #fff4ea;
+  --color-blue-100: #ffe6d0;
+  --color-blue-200: #ffcda1;
+  --color-blue-300: #ffb072;
+  --color-blue-400: #ff9540;
+  --color-blue-500: #f78420;
+  --color-blue-600: #f57c00;
+  --color-blue-700: #d96a00;
+  --color-blue-800: #b05500;
+  --color-blue-900: #1f1f1f;
+  --color-blue-950: #141414;
+
+  /* Neutral charcoal surfaces */
+  --color-slate-50: #f7f7f7;
+  --color-slate-100: #f0f0f0;
+  --color-slate-200: #e5e5e5;
+  --color-slate-300: #d0d0d0;
+  --color-slate-400: #9b9b9b;
+  --color-slate-500: #6f6f6f;
+  --color-slate-600: #555555;
+  --color-slate-700: #3a3a3a;
+  --color-slate-800: #262626;
+  --color-slate-900: #1c1c1c;
+  --color-slate-950: #121212;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #ffffff;
+  color: #1c1c1c;
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
